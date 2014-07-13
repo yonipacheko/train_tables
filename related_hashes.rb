@@ -42,7 +42,7 @@ arr =   [
               p longest[j].size
               p long_for_i.size
               long_for_i = longest[j] + [time_tables[i]]
-            end
+            #end
           end
         end
       end
