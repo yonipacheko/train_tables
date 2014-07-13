@@ -38,7 +38,9 @@ arr =   [
         i_start_date = DateTime.parse(time_tables[i][:start_date]).to_time
         if j_end_date <= i_start_date
           if longest[j][-1][:end_location].eql? time_tables[i][:start_location]
-            if longest[j].size + 1 > long_for_i.size
+            #if longest[j].size + 1 > long_for_i.size  # shall I check this ?
+              p longest[j].size
+              p long_for_i.size
               long_for_i = longest[j] + [time_tables[i]]
             end
           end
