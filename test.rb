@@ -30,7 +30,17 @@ arr = ['cat', 'dog', 'pony', 'bird', 'tiger', 'lion', 'snake', 'wale']
 # end
 #
 # remove(arr, 'cat', 'bird')
-0.upto(arr.size-1) do |j|
-  puts arr[j].size
+def findIndex(arr, var)
+  arr.each do |i|
+    if i.include?(var)
+      p 'yeah' + i
+    end
+
+  end
+  return false
 end
 
+findIndex(arr, 'cat')
+
+"b`qx?rvnudk`mc-bnl".chars.map(&:succ).join
+'which amounts to: ' "#{fname}@#{lname}.com"
